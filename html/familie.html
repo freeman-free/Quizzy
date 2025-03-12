@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz over Familie</title>
+    <link rel="stylesheet" href="../css/stylefamilie.css"> 
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Familie Quiz</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="about.html">Over Ons</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="quiz" id="quiz-section">
+            <h2>Test je kennis over Familie!</h2>
+            <form id="quiz-form">
+                <div class="question" id="question1">
+                    <p>1. Wie is je moeder’s moeder?</p>
+                    <label>
+                        <input type="radio" name="q1" value="a"> Oma
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b"> Tante
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c"> Zus
+                    </label>
+                    <button type="button" class="next-btn" onclick="nextQuestion(1)">Volgende</button>
+                </div>
+
+                <div class="question" id="question2">
+                    <p>2. Wat betekent het als je ‘neef’ zegt?</p>
+                    <label>
+                        <input type="radio" name="q2" value="a"> Je broer
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b"> Je zoon
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c"> De zoon van je broer of zus
+                    </label>
+                    <button type="button" class="next-btn" onclick="nextQuestion(2)">Volgende</button>
+                </div>
+
+                <div class="question" id="question3">
+                    <p>3. Wie is je vader’s zus?</p>
+                    <label>
+                        <input type="radio" name="q3" value="a"> Tante
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="b"> Oma
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c"> Moeder
+                    </label>
+                    <button type="button" class="next-btn" onclick="nextQuestion(3)">Volgende</button>
+                </div>
+
+                <div class="question" id="question4">
+                    <p>4. Wat is een familiebijeenkomst waar iedereen samenkomt?</p>
+                    <label>
+                        <input type="radio" name="q4" value="a"> Reünie
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="b"> Huwelijk
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="c"> Verjaardag
+                    </label>
+                    <button type="button" class="next-btn" onclick="nextQuestion(4)">Volgende</button>
+                </div>
+
+                <div class="question" id="question5">
+                    <p>5. Wie is je broer’s zoon?</p>
+                    <label>
+                        <input type="radio" name="q5" value="a"> Neef
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="b"> Oom
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="c"> Vader
+                    </label>
+                    <button type="button" class="next-btn" onclick="nextQuestion(5)">Volgende</button>
+                </div>
+
+                <div id="feedback"></div>
+                <div id="score"></div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Familie Quiz. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="../javascript/scriptfamilie.js"></script>
+</body>
+</html>
