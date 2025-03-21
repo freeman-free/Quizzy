@@ -9,16 +9,16 @@ function selectOption(element, name) {
     alert(`Je hebt ${name} gekozen!`);
 }
 const questions = [
-    { question: "Wie is de zus van je vader voor jou?", options: ["Tante", "Nicht", "Oma", "Zus"], correct: 0 },
-    { question: "Hoe noem je de vader van je moeder?", options: ["Vader", "Oom", "Opa", "Broer"], correct: 2 },
-    { question: "Wie is de zoon van je oom voor jou?", options: ["Broer", "Neef", "Vader", "Opa"], correct: 1 },
-    { question: "Wie is de moeder van je moeder?", options: ["Oma", "Tante", "Zus", "Nicht"], correct: 0 },
-    { question: "Wat is de relatie tussen jou en de dochter van je broer?", options: ["Oma", "Zus", "Tante", "Nicht"], correct: 3 },
-    { question: "Wie is de broer van je vader voor jou?", options: ["Neef", "Oom", "Opa", "Vader"], correct: 1 },
-    { question: "Hoe heet de dochter van je oom voor jou?", options: ["Tante", "Zus", "Nicht", "Oma"], correct: 2 },
-    { question: "Wie is je schoonvader?", options: ["De vader van je partner", "De vader van je broer", "Je stiefvader", "Je opa"], correct: 0 },
-    { question: "Hoe noem je de zus van jou partner?", options: ["Tante", "Zus", "Schoonzus", "Nicht"], correct: 3 },
-    { question: "Wat is de relatie tussen jou en de zoon van je zus?", options: ["Neef", "Broer", "Vader", "Oom"], correct: 0 }
+    { question: "Wat is een belangrijk kenmerk van een goede vriend?", options: ["Eerlijkheid", "Populariteit", "Rijkdom", "Uiterlijk"], correct: 0 },
+    { question: "Wat betekent vriendschap?", options: ["Iemand gebruiken voor je eigen gewin", "Onvoorwaardelijke steun en vertrouwen", "Alleen contact hebben als het uitkomt", "Iemand alleen online kennen"], correct: 1 },
+    { question: "Wat doe je als je vriend zich verdrietig voelt?", options: ["Negeer het", "Vraag hoe je kunt helpen", "Maak er een grap over", "Zeg dat ze zich niet zo moeten aanstellen"], correct: 1 },
+    { question: "Hoe vaak moet je contact hebben om een echte vriend te zijn?", options: ["Elke dag", "Wekelijks", "Wanneer het uitkomt", "Er is geen vaste regel"], correct: 3 },
+    { question: "Wat maakt een vriendschap sterker?", options: ["Eerlijkheid en vertrouwen", "Jaloezie en competitie", "Leugens en geheimen", "Altijd hetzelfde denken"], correct: 0 },
+    { question: "Wat moet je doen als je ruzie hebt met een vriend?", options: ["Negeren en hopen dat het verdwijnt", "Erover praten en proberen het op te lossen", "Wraak nemen", "Nooit meer met ze praten"], correct: 1 },
+    { question: "Welke eigenschap helpt om nieuwe vrienden te maken?", options: ["Open en vriendelijk zijn", "Arrogant zijn", "Altijd de beste willen zijn", "Altijd kritiek geven"], correct: 0 },
+    { question: "Hoe kun je een vriend laten zien dat je om hen geeft?", options: ["Luisteren en tijd samen doorbrengen", "Alleen cadeaus geven", "Altijd hun mening volgen", "Ze negeren als je geen zin hebt"], correct: 0 },
+    { question: "Wat is belangrijk in een langdurige vriendschap?", options: ["Respect en geduld", "Altijd alles samen doen", "Altijd winnen in discussies", "Nooit je gevoelens delen"], correct: 0 },
+    { question: "Hoe kan vriendschap veranderen over de tijd?", options: ["Het kan groeien en verdiepen", "Vriendschap blijft altijd hetzelfde", "Je hebt altijd evenveel vrienden", "Oude vrienden blijven altijd belangrijker dan nieuwe"], correct: 0 }
 ];
 
 let currentQuestion = 0;
