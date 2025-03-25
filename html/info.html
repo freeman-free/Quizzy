@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizzie - Informatie</title>
     <link rel="stylesheet" href="../css/stylefamilie.css">
+    <script src="../javascript/scriptfamilie.js"></script>
 </head>
 <body>
     <header>
@@ -13,9 +14,13 @@
             <a href="../html/home.html">QUIZZIE</a>
         </div>
         <nav>
-            <a href="../html/familie.html">Familie Quiz</a>
-            <a href="../html/mariano.html">Vriendschap Quiz</a>
-            <a href="romantiek-quiz.html">Romantiek Quiz</a>
+            <div class="menu" onclick="toggleMenu()">☰
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="../html/home.html">Home</a>
+                    <a href="../html/home.html">Quizzen</a>
+                    <a href="../html/info.html">Over ons</a>
+                </div>
+            </div>
         </nav>
     </header>
     <div class="container">
@@ -53,9 +58,20 @@
                 <li><strong>Wat helpt om een langdurige romantische relatie te behouden?</strong> - Respect en geduld zijn belangrijk, omdat elke relatie ups en downs kent.</li>
             </ul>
         </section>        
+
+    <div class="extra-info">
+        <section>
+            <h2>Meer informatie</h2>
+            <p>QUIZZIE is een platform dat is ontworpen om leren leuk en interactief te maken. Onze quizzen zijn zorgvuldig samengesteld om kennis te vergroten en tegelijkertijd plezier te bieden. Of je nu met familie, vrienden of je partner speelt, QUIZZIE heeft iets voor iedereen!</p>
+        </section>
+
+        <section>
+            <h2>Over ons</h2>
+            <p>QUIZZIE is opgericht door een gepassioneerd team van drie vrienden: Bryan, Mariano en Michael. Wij geloven dat leren niet saai hoeft te zijn en hebben QUIZZIE gecreëerd om mensen dichter bij elkaar te brengen door middel van educatieve en vermakelijke quizzen.</p>
+            <p>Met onze diverse achtergronden en gedeelde liefde voor kennis en technologie, werken we samen om een platform te bouwen dat zowel informatief als plezierig is. Bedankt dat je deel uitmaakt van onze reis!</p>
+        </section>
     </div>
-
-
+    </div>
     <footer>
         <p>&copy; 2025 QUIZZIE. Alle rechten voorbehouden.</p>
     </footer>

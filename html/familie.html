@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz over Familie</title>
-    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="../css/stylefamilie.css"> 
     <script src="../javascript/scriptfamilie.js"></script>
 </head>
 <body>
@@ -14,8 +14,13 @@
             <a href="../html/home.html">QUIZZIE</a> 
         </div>
         <nav>
-            <a href="../html/home.html">HOME</a>
-            <div class="menu-icon">&#9776;</div>
+            <div class="menu" onclick="toggleMenu()">☰
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="../html/home.html">Home</a>
+                    <a href="../html/home.html">Quizzen</a>
+                    <a href="../html/info.html">Over ons</a>
+                </div>
+            </div>
         </nav>
     </header>
 

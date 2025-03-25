@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzie</title>
+    <link rel="stylesheet" href="../css/Styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="../images/logo.png" alt="Logo" class="logo-img">             
+                <a href="../html/home.html">QUIZZIE</a> 
+            </div>
+            <div class="menu" onclick="toggleMenu()">☰
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="../html/home.html">Home</a>
+                    <a href="../html/home.html">Quizzen</a>
+                    <a href="../html/info.html">Over ons</a>
+                </div>
+            </div>   
+
+        </header>
+        <main id="quiz-container">
+            <h2 id="question">Vraag komt hier...</h2>
+            <div class="options" id="options"></div>
+            <div class="navigation">
+                <button onclick="prevQuestion()" id="prevBtn" disabled>Vorige</button>
+                <button onclick="nextQuestion()" id="nextBtn">Volgende</button>
+            </div>
+        </main>
+        <div id="result-container" class="hidden">
+            <h2>Jouw persoonlijkheidstype:</h2>
+            <p id="result-text"></p>
+            <button onclick="restartQuiz()">Opnieuw proberen</button>
+        </div>
+    </div>
+    
+    <script src="../javascript/Script.js"></script>
+</body>
+</html>
+

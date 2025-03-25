@@ -13,8 +13,14 @@
                 <img src="../images/logo.png" alt="Logo">
                 <span>QUIZZIE</span>
             </div>
-            <nav>
-                <div class="menu-icon">&#9776;</div>
+            <nav>            
+            <div class="menu" onclick="toggleMenu()">☰
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="../html/home.html">Home</a>
+                    <a href="../html/home.html">Quizzen</a>
+                    <a href="../html/info.html">Over ons</a>
+                </div>
+            </div>
             </nav>
         </header>
 
@@ -23,11 +29,11 @@
             <p>Deze quizzes is gebaseerd op vriendschappelijke/romantieke relaties</p>
 
             <div class="options">
-                <a href="../html/familie.html" class="option">
+                <a href="../html/mariano.html" class="option">
                     <img src="../images/mannenvriendschap.jpg" alt="Mariano">
                     <p>Vriendschap quiz <br>MARIANO</p>
                 </a>
-                <a href="quiz.html?name=Michael" class="option">
+                <a href="../html/relatie.html" class="option">
                     <img src="../images/dreamstime_xs_50171331.jpg" alt="Michael">
                     <p>Relatie quiz <br>MICHAEL</p>
                 </a>
@@ -36,6 +42,7 @@
                     <p> Familie quiz <br>BRYAN</p>
                 </a>
             </div>
+            <button id="start-btn" onclick="window.location.href='../html/info.html'">More info</button>
         </main>
     </div>
     <footer>
@@ -43,5 +50,5 @@
         <p>&copy; 2025 Quizzie. Alle rechten voorbehouden.</p>
     </footer>
 </body>
-<script src="script.js"></script>
+<script src="../javascript/script.js"></script>
 </html>

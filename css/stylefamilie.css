@@ -8,11 +8,28 @@ html, body {
     height: 100%;
 }
 
+#start-btn {
+    background-color: #5B3635;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#start-btn:hover {
+    background-color: #8B5F5A;
+}
+
 .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    color: #B8A9A1;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #fdf6ee;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
 }
 
 header {
@@ -42,16 +59,39 @@ header {
     margin-right: 8px;
 }
 
-nav {
-    display: flex;
-    align-items: center;
+.menu {
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
 }
 
-nav a {
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: #fdf6ee;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-width: 180px;
+    z-index: 10;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 15px 20px;
     text-decoration: none;
-    color: black;
-    font-size: 18px;
-    margin-right: 20px;
+    color: #5a3d35;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background: #d6b1aa;
+    color: white;
+}
+
+.show {
+    display: block;
 }
 
 .menu-icon {
@@ -134,7 +174,6 @@ main {
     padding: 20px;
 }
 
-/* De container voor de quizvragen */
 .quiz-container {
     max-width: 600px;
     margin: 50px auto;
@@ -145,7 +184,6 @@ main {
     text-align: center;
 }
 
-/* Stijl voor de vraag en antwoordknoppen */
 .quiz-question {
     font-size: 20px;
     margin-bottom: 15px;
@@ -179,7 +217,6 @@ main {
     background-color: #e0d6cf;
 }
 
-/* Stijlen voor het resultaat */
 .correct {
     background-color: #8bc34a !important;
 }
@@ -188,14 +225,12 @@ main {
     background-color: #e57373 !important;
 }
 
-/* Feedback */
 #feedback {
     margin-top: 20px;
     font-size: 16px;
     color: #555;
 }
 
-/* Verbergen van onzichtbare secties */
 .hidden {
     display: none;
 }
